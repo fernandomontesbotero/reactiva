@@ -1,7 +1,53 @@
-<!DOCTYPE HTML>
-<html>
-    <body>
-        <h1>La Quebrada</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
+    html xmlns="http://www.w3.org/1999/xhtml
+    head
+    meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Formulario</title>
+</head>
 
-    </body>
+<body>
+    <div align="center">
+        <form name="datos" method="post" action="formulario.html">
+            <table>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre"/></td>
+                </tr>
+                <tr>
+                    <td>Login</td>
+                    <td><input type="text" name="login" /></td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><input type="password" name="password" /></td>
+                </tr>
+                <tr>
+                    <td>Sexo</td>
+                    <td>M <input type="radio" name="sexo" value="Masculino" /><br>
+                            F <input type="radio" name="sexo" value="Femenino" /></td>
+                </tr>
+                <tr>
+                    <td>Gustos</td>
+                    <td>Perreo <input type="checkbox" name="sexo" value="Perreo" /><br>
+                            Bailar <input type="checkbox" name="sexo" value="Bailar" /></td>
+                </tr>
+                <tr>
+                    <td>Opinion</td>
+                    <td><textarea name="opinion"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Ciudad</td>
+                    <td><select  name="ciudad">
+                            <option value="Manizales" selected>Manizales</option>
+                            <option value="Bogota">Bogota</option>
+                            <option value="Pereira">Pereira</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Enviar"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
 </html>
