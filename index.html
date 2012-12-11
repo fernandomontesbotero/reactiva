@@ -3,12 +3,17 @@
     head
     meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Formulario</title>
+<link rel="stylesheet" href="quebrada.css"/>
+<script type="text/javascript" src="validator.js"></script>
 </head>
 
 <body>
     <div align="center">
-        <form name="datos" method="post" action="formulario.html">
-            <table>
+        <form name="datos" method="post" action="index.html">
+            <table id="tabla">
+                <tr>
+                    <td colspan="2"><h2>Registro La Quebrada</h2></td>
+                </tr>
                 <tr>
                     <td>Nombre</td>
                     <td><input type="text" name="nombre"/></td>
@@ -38,16 +43,19 @@
                 <tr>
                     <td>Ciudad</td>
                     <td><select  name="ciudad">
-                            <option value="Manizales" selected>Manizales</option>
+                            <option value="0" selected>Seleccione...</option>
+                            <option value="Manizales" >Manizales</option>
                             <option value="Bogota">Bogota</option>
                             <option value="Pereira">Pereira</option>
                         </select></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="submit" value="Enviar"/></td>
+                    <td colspan="2"><input type="button" value="Enviar" onclick="validar()"/></td>
                 </tr>
             </table>
         </form>
     </div>
+    <div><a href="camara.html">Camara</a></div>
+
 </body>
 </html>

@@ -1,0 +1,17 @@
+body{
+    font-family: monospace;
+    font-size: 12px;
+    color: black;
+}
+input, radio, checkbox, select{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+#tabla{
+    border-color: #666666;
+        border-width: 1px;
+    border-style: dashed;
+    background-color:#ffffff;
+}
